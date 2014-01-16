@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'jibe' # this gem
 require 'dotenv'
 require "pry"
 require 'awesome_print'
