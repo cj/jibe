@@ -1,7 +1,7 @@
 module Jibe
   class Engine < Rails::Engine
     initializer "jibe.activerecord" do
-      ActiveRecord::Base.send :extend, Model::ClassMethods
+      ActiveRecord::Base.send :include, Model
     end
   end
 end

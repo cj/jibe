@@ -19,6 +19,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rails", "~> 4.0.2"
+  spec.add_dependency "sidekiq", ">= 2.17.3"
+  spec.add_dependency "zopfli"
+  spec.add_dependency "recursive-open-struct"
+  spec.add_dependency "hooks"
+  spec.add_dependency "encryptor"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"

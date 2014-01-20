@@ -6,6 +6,7 @@ require 'dotenv'
 require "pry"
 require 'awesome_print'
 require 'database_cleaner'
+require 'sidekiq/testing'
 
 Dotenv.load
 
