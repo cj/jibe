@@ -2,6 +2,10 @@ module Jibe
   module Model
     extend ActiveSupport::Concern
 
+    def self.const_missing name
+      const_set name, Class.new(name.to_s.classify.constantize)
+    end
+
     included do
       include Hooks
       include Hooks::InstanceHooks

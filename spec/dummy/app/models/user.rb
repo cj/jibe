@@ -6,9 +6,7 @@ class User < ActiveRecord::Base
       %w(first_name last_name).include? field.to_s
     end
 
-    attributes["jibe_off"] = true
-
-    User.create attributes
+    Jibe::Model::User.create attributes
   end
 end
 
